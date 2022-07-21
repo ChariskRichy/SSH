@@ -1,0 +1,15 @@
+name: Debugging with SSH
+on:
+  workflow_dispatch:
+    inputs:
+      Debug with SSH:
+        description: 'SSH?'
+        required: true
+        default: 'Of course!'
+jobs:
+  ssh:
+    runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@v2
+    - name: Starting SSH
+      uses: mxschmitt/action-tmate@v3
