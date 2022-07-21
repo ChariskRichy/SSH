@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       uses: actions/checkout@v2
-    - name: Starting SSH
+
       uses: mxschmitt/action-tmate@v3
