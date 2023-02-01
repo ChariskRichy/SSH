@@ -17,7 +17,7 @@ jobs:
     - name: Set Swap Space
       uses: pierotofy/set-swap-space@master
       with:
-        swap-size-gb: 16
+        swap-size-gb: 8
 
     - name: SSH
       uses: mxschmitt/action-tmate@v3
